@@ -1,0 +1,123 @@
+
+@import url(fonts.css);
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%) ;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  height:100vh;
+  text-align: center;
+  font-size: 14px;
+  font-family: "roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  flex:1;
+}
+
+.left .heading{
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.left .description{
+  font-size: 15px;
+  color:white;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.right{
+  flex:1;
+}
+
+.right .form-heading{
+  color: white;
+  font-size: 18px;
+  background-color: hsl(248, 32%, 49%);
+  padding: 15px 5px 15px 5px;
+  margin: auto;
+  width: 90%;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.70);
+}
+
+.right .form-input{
+  background-color: white;
+  margin: 10px;
+  width: 90%;
+  margin:auto;
+  border-radius: 10px;
+  padding: 50px 0 50px 0;
+}
+
+.form-input input {
+  display: block;
+  width:80%;
+  margin: 0 auto 50px auto;
+  padding: 15px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.form-input .btn{
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  color:white;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  font-size: 20px;
+  border: 1px solid hsl(154, 59%, 51%);
+  cursor: pointer;
+}
+
+.form-input .btn:hover{
+  opacity:0.8;
+}
+
+.form-input input[type=text]{
+  font-size: 15px;
+}
+
+.form-input input[type=email]{
+  font-size: 15px;
+}
+.form-input input[type=text]:focus{
+  border: 3px solid red;
+  outline:none;
+}
+
+@media screen and (max-width: 900px){
+  .container{
+    display:block;
+    padding: 30px;
+  }
+
+  .container .left{
+    margin-bottom: 20px;
+  }
+}
